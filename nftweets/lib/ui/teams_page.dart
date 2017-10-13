@@ -1,19 +1,15 @@
 import 'package:flutter/material.dart';
 
+class TeamsPage extends StatelessWidget {
 
-class TeamsPage extends StatefulWidget {
-  @override
-  _TeamsPageState createState() => new _TeamsPageState();
-}
-
-class _TeamsPageState extends State<TeamsPage> {
   @override
   Widget build(BuildContext context) {
-    return new Container(
-      color: Colors.pink,
-      child: new Center(
-        child: new Text("Teams"),
-      ),
-    );
+    return
+      new TabBarView(
+        children: <Widget>[
+          new Card(child: new Text("Teams")),
+          new Card(child: new Text("Moar teams")),
+        ],
+      );
   }
 }
